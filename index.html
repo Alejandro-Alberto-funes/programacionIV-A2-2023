@@ -12,12 +12,14 @@
 
 <body>
     <div class="container" id="app">
-        <div class="card border-success" style="max-width: 36rem;">
-            <div class="card-header bg-success text-white"> Registro de alumnos</div>
+        <div class = "row">
+            <div class = "col-12 col-md-6">
+              <div class="card text-dark mb-3" style="max-width: 41rem;">
+            <div class="card-header text-bg-primary text-white fw-bolder"> Registro de Alumnos</div>
             <div class="card-body">
                 <form id="frmAlumnos" @submit.prevent="guardarAlumno">
                     <div class="row p-1">
-                        <div class="col-3 col-md-2">CODIGO:</div>
+                        <div class="col-3 col-md-2">Codigo:</div>
                         <div class="col-9 col-md-3">
                             <input class="form-control" type="text" v-model="alumno.codigo" name="txtcodigoAlumno"
                                 id="txtCodigoAlumno">
@@ -25,7 +27,7 @@
 
                     </div>
                     <div class="row p-1">
-                        <div class="col-3 col-md-2">NOMBRE:</div>
+                        <div class="col-3 col-md-2">Nombre:</div>
                         <div class="col-9 col-md-6">
                             <input class="form-control" type="text" v-model="alumno.nombre" name="txtnombreAlumno"
                                 id="txtnombreAlumno">
@@ -47,10 +49,18 @@
                              <option value="opcion 2">Jiquilisco</option>
                              <option value="opcion 3">Santa Elena</option>
                              <option value="opcion 4">Santa María</option>
-                             <option value="opcion 5"> Ereguayquin</option>
+                             <option value="opcion 5">Ereguayquin</option>
                              <option value="opcion 6">Conchagua</option>
                              <option value="opcion 7">Ciudad Barrios</option>
-                             <option value="opcion 8">Santiago de María</option>
+                             <option value="opcion 8">Concepcio Batres</option>
+                             <option value="opcion 9">San Dionisio</option>
+                             <option value="opcion 10">San Francisco Javier</option>
+                             <option value="opcion 11">Puerto el Triunfo</option>
+                             <option value="opcion 11">Alegria</option>
+                             <option value="opcion 12">Berlín</option>
+                             <option value="opcion 13">Estanzuela</option>
+                             <option value="opcion 14">Tecapan</option>
+                             <option value="opcion 15">Nueva Granada</option>
                            </select>
                         </div>
                     </div>
@@ -66,14 +76,14 @@
                         </div>
                     </div>
                     <div class="row p-1">
-                        <div class="col-9 col-md-2">telefono:</div>
+                        <div class="col-9 col-md-2">Telefono:</div>
                         <div class="col-9 col-md-3">
                             <input class="form-control" type="text" v-model="alumno.telefono" name="txttelefono" id="txttelefonoAlumno">
                          </div>
                     </div>
 
                     <div class="row p-1">
-                        <div class="col-3 col-md-2">EDAD:</div>
+                        <div class="col-3 col-md-2">Edad:</div>
                         <div class="col-9 col-md-2">
                             <input class="form-control" type="text" v-model="alumno.edad" name="txtedadAlumno"
                          id="txtedadAlumno">
@@ -91,11 +101,11 @@
                     </div>
                     <div class="row p-1">
                         <div class="col col-md-6">
-                            <input class="btn btn-success" type="submit" value="Guardar Datos">
+                            <input class="btn btn-outline-info" type="submit" value="Guardar Datos">
 
                         </div>
                         <div class="col col-md-6">
-                            <input class="btn btn-warning" type="reset" value="Nuevo registro">
+                            <input class="btn btn-outline-warning" type="reset" value="Nuevo registro">
                         </div>
                     </div>
                 </form>
